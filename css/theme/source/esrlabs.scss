@@ -1,0 +1,42 @@
+/**
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Basic Gothic OT', sans-serif;
+$mainColor: #000;
+$headingFont: 'Basic Gothic Pro', Impact, sans-serif;
+$headingColor: #DC4723;
+$headingTextShadow: none;
+$headingTextTransform: uppercase;
+$backgroundColor: #E6E6E6;
+$linkColor: #DC4723;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+.reveal ul {
+  list-style: none;
+}
+
+.reveal li:before {
+  content: "– ";
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+.reveal section img {
+	margin: 15px 0px;
+	background: none;
+	border: 0px solid $mainColor;
+  box-shadow: none;
+}
+
